@@ -7,7 +7,7 @@
 <ion-content>
  <ion-item *ngFor="let elemento of componentes"
  [routerLink]="elemento.redirecTo"
- detail>
+ detail color="secondary">
   <ion-icon [name]="elemento.icon" slot="start" color="primary"></ion-icon>
    <ion-label>{{elemento.name}}</ion-label>
  </ion-item>
