@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" >
+ 
+      <ion-back-button defaultHref="/"
+      color="primary"
+      text="Regresar" ></ion-back-button>
+      
+        
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-avatar >
+        <img src="/assets/icon/bd1.png">
+      </ion-avatar>
+    </ion-buttons>
+
+      <ion-title>avatar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-chip color="primary" mode="ios" outline="true" *ngFor = "let x of [1,1,1,1,1,1]">
+    <ion-avatar>
+      <img src="/assets/icon/bd1.png">
+    </ion-avatar>
+    <ion-label>Bienvenido 2021</ion-label>
+  </ion-chip>
+
+  <ion-list>
+    <ion-item *ngFor = "let x of [1,1,1,1,1,1]">
+      <ion-avatar>
+        <img src="/assets/icon/bd1.png" />
+      </ion-avatar>
+      <ion-label>Awesome Label</ion-label>
+
+    </ion-item>
+  </ion-list>
+</ion-content>
