@@ -1,11 +1,14 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first" color="primary"></ion-menu-button>
+    </ion-buttons>
     <ion-title color="primary">Componentes</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
- <ion-item *ngFor="let elemento of componentes"
+ <ion-item *ngFor="let elemento of componentes | async"
  [routerLink]="elemento.redirecTo"
  detail color="secondary">
   <ion-icon [name]="elemento.icon" slot="start" color="primary"></ion-icon>
